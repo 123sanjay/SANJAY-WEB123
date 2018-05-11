@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> string</title>
+	
+	
+</head>
+<body>
+  <script type="text/javascript">
+  	
+  	// index og a string
+  	var name="Sanjay G"
+    console.log( name[5]+" is the sixth letter"); 
+
+	//  slicing of string
+	console.log(name.slice(1,5));
+	// repeat a string
+	console.log(name.repeat( 2 ));
+	//length of string
+	 console.log(name.length);
+	 // string concatenate
+	 console.log(name+" boy");
+	 console.log(name.concat(" BOY"));
+	 // find the character in string
+	 console.log(name.charAt(5));
+	// find the char code in string
+	console.log(name.charCodeAt(5));
+	// to replace a character in string
+	var greet="good mrng all students"
+	console.log(name.replace("Sanjay","sanjay"));
+	console.log(greet.replace("mrng","afternoon").replace("students","faculty"));
+	// to find the index in string using search
+	console.log(name.search("y"));
+	// split the string and using
+	console.log(greet.split(" "));
+	// convert the string into lower case and upper case
+	console.log(name.toLocaleUpperCase());
+	console.log(name.toLocaleLowerCase());
+	// remove the spaces @ left side of the string
+	var s= "hi this is front end development"
+	console.log(s.trimLeft());
+	// remove the spaces @ right side of the string
+    console.log(s.trimRight());
+    // remove the spaces @ both side of the string
+    console.log(s.trim());
+    // to find the value of
+    console.log(name.valueOf());
+    // apply big,blink,bold,link
+    console.log(name.big());
+    console.log(name.blink());
+    console.log(name.bold());
+    console.log(name.link());
+    // find the index of the string using indexOf
+    console.log(name.indexOf("a",2));
+    // split the string and join by using 
+    console.log(name.split("").join("-"));
+    //replace multiole characters 
+    console.log(greet.replace("mrng","afternoon").replace("all","ALL"));
+
+    
+
+
+
+  </script>
+
+</body>
+</html>

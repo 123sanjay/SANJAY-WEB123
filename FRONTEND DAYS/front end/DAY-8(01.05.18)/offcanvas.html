@@ -1,0 +1,98 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title> sanjay</title>
+		<script src ="./jquery-3.3.1.min.js"></script>
+		<style >
+		    .black{
+		    	background-color: black;
+		    }
+			.light_blue{
+				background-color: skyblue;
+			}
+			.dark_blue{
+				background-color: navy;
+			}
+			.btn{
+				background-color: wheat;
+				border:none;
+				padding: 11px;
+			}
+			.btn:hover {
+				background-color: gold;
+				margin-top: 2px;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+			.mar{
+				background-color: yellow;
+			}
+			.mar:hover{
+				background-color: pink;
+				stop-color: green;
+
+			}
+			html,body,main{
+				height: 100%;
+				width:100%;
+			}
+			nav{
+				width: 300px;
+				height: 100%;
+				position: absolute;
+				transform: translate(-300px,0);
+				transition:transform 0.3s ease;
+			}
+			nav.open{
+				transform: translate(0,0);
+			}
+			@media screen and (min-width: 600px){
+				nav{
+					position: relative;
+					transform: translate(0,0);
+				}
+				body{
+					display: flex;
+					flex-flow: row nowrap;
+				}
+				main{
+					width: auto;
+					flex-grow: 1;
+				}
+			}
+
+		</style>
+		<script >
+			jQuery(document).ready(function(){
+				jQuery("#click").click(function(){
+					menu.addEventListener("click",function(e){
+						drawer.classList.toggle('open');
+						e.stopPropagation();
+					});
+				})
+
+			});
+		</script>
+	</head>
+	<body>
+		<nav id="drawer" class="black">
+			<ul>
+				<li><a href="#"> HOME</a></li>
+				<li><a href="#"> ABOUT</a></li>
+				<li><a href="#">SUCCESS STORY</a></li>
+				
+			</ul>
+		</nav>
+		<!-- <nav id="drawer" class="dark_blue"></nav> -->
+		
+		<main class="light_blue" id="menu">
+		   <button class="btn" id="click">&#8801;</button>
+		   <br>
+		   <!-- <marquee class="mar" onmouseover="this.stop()" onmouseleave="this.start()"> SANJAY </marquee> -->
+		  <!--  click on <b> &#8801;</b> -->
+	    
+	    </main>
+
+	
+	</body>
+	</html>

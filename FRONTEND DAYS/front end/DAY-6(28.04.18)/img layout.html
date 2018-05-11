@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>img layout</title>
+	<style >
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+		.img1{
+			background-image: url(123.jpeg);
+			background-repeat: no-repeat;
+			
+
+		}
+		.img2{
+			background-image: url(456.jpeg);
+			background-repeat: no-repeat;
+			
+
+		}
+		.img3{
+			background-image: url(abc.jpeg);
+			background-repeat: no-repeat;
+			
+
+		}
+		.img4{
+			background-image: url(msd.jpg);
+			background-repeat: no-repeat;
+			
+
+		}
+		.img5{
+			background-image: url(dh.png);
+			background-repeat: no-repeat;
+			
+
+
+		}
+		img{
+			width: 100%;
+			height: 150px;
+		}
+		.box{
+			width:100%;
+			height: 150px;
+		}
+		@media screen and (min-width: 0px) and (max-width: 450px) {
+			.img1,.img2{
+				width: 100%;
+				
+			}
+			.img3,.img4{
+				width:50%;
+
+			}
+			.img5{
+				width: 100%;
+			}
+		}
+		@media screen and (min-width: 451px) and (max-width: 750px) {
+			.img1,.img2{
+				width: 50%;
+			}
+			.img3,.img4{
+				width:100%;
+			}
+			.img5{
+				width: 25%;
+			}
+		}
+        @media screen and (min-width: 751px) and (max-width: 1000px){
+			.container{
+				width: 800px;
+				margin: 0px auto;
+			}
+			.img1,.img2{
+				width: 50%;
+			}
+			.img3,.img4{
+				width:100%;
+			}
+			.img5{
+				width: 25%;
+			}
+            }
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="box img1 " >
+			<img src="./123.jpeg">
+		</div>
+		<div  class="box img2 ">
+			<img src="./456.jpeg">
+		</div>
+		<div class="box img3 ">
+			<img src="./abc.jpg">
+		</div>
+		<div class="box img4 ">
+			<img src="./msd.jpg">
+		</div>
+		<div class="box img5 ">
+			<img src="./dh.png">
+		</div>
+
+		
+</div>
+</body>
+</html>

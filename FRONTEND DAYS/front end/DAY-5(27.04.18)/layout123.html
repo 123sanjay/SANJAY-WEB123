@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> fluid style 2</title>
+	<style >
+		.container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+		.dark-blue{
+			background-color: navy;
+		}
+		.light-blue{
+			background-color: skyblue;
+		}
+		.green{
+			background-color: forestgreen;
+		}
+		.red{
+			background-color: red;
+		}
+		.orange{
+			background-color: darkorange;
+		}
+		.yellow{
+			background-color: yellow;
+		}
+		.pink{
+			background-color: pink;
+		}
+		.box{
+			width:100%;
+			height: 150px;
+		}
+		@media screen and (min-width: 0px) and (max-width:450px) {
+			.dark-blue,.red,{
+				width: 100%;
+			}
+			.light-blue,.green,.yellow{
+				width:50%;
+			}
+			.orange,.pink{
+				width: 25%;
+			}
+
+			
+		}
+		@media screen and (min-width: 450px) and (max-width:800px) {
+			.dark-blue,.red{
+				width: 50%;
+			}
+			.light-blue,.green,.yellow{
+				width:50%;
+			}
+			.orange,.pink{
+				width: 25%;
+			}
+
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box dark-blue"></div>
+		<div class="box light-blue"></div>
+		<div class="box green"></div>
+		<div class="box red"></div>
+		<div class="box orange"></div>
+		<div class="box yellow"></div>
+		<div class="box pink"></div>
+		
+	</div>
+
+
+</body>
+</html>

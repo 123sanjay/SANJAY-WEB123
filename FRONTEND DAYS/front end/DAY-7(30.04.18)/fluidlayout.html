@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> FLUID LAYOUT</title>
+	<style>
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+		.dark-blue{
+			background-color: navy;
+
+		}
+		.light-blue{
+			background-color: skyblue;
+			
+		}
+		.green{
+			background-color: forestgreen;
+			
+		}
+		.red{
+			background-color: red;
+		}
+		.orange{
+			background-color: darkorange;
+		}
+		.box{
+			width:100%;
+			height: 150px;
+		}
+		@media screen and (min-width: 0px) and (max-width:450px) {
+			.dark-blue{
+				width: 100%;
+				order: -2;
+
+			}
+				.red{
+				width: 100%;
+				order: -1
+
+			}
+			.orange{
+				width: 100%;
+				order:1;
+				
+			}
+			.light-blue{
+				width:50%;
+				order: 3;
+				
+			}
+			.green{
+				width:50%;
+				order:2 ;
+				
+			}
+			
+		}
+		@media screen and (min-width: 451px) and (max-width: 550px){
+			.dark-blue{
+				width: 100%}
+				.light-blue,.green{
+				width: 50%;
+			}
+			.red{
+				width:35%;
+			}
+			.orange{
+				width: 65%;
+			}
+			
+		}
+		@media screen and (min-width: 551px) and (max-width: 800px){
+			.container{
+				width: 800px;
+				margin: 0px auto;
+			}
+			.dark-blue{
+				width: 100%;
+			}
+				.light-blue{
+				width: 50%;
+			}
+			.green{
+				width: 50%;
+			}
+			.red{
+				width:35%;
+			}
+			.orange{
+				width: 65%;
+			}
+			}
+			
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box dark-blue"></div>
+		<div class="box light-blue"></div>
+		<div class="box green"></div>
+		<div class="box red"></div>
+		<div class="box orange"></div>
+		
+	</div>
+
+</body>
+</html>
